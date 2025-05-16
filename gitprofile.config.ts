@@ -2,7 +2,7 @@
 
 const CONFIG = {
   github: {
-    username: 'sirchnik', // Your GitHub org/user name. (This is the only required config)
+    username: 'sirchnik-xitaso', // Your GitHub org/user name. (This is the only required config)
   },
   /**
    * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
@@ -14,9 +14,9 @@ const CONFIG = {
     github: {
       display: true, // Display GitHub projects?
       header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
+        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
@@ -25,17 +25,19 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        // projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [
+          'hochschule-augsburg/course-finder',
+          'hochschule-augsburg/SQL-Train',
+        ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'Projects',
+      header: 'Additional Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
           title: 'Piconut',
-          description:
-            'Helping in developing the Piconut RISC-V CPU at THA.',
+          description: 'Helping in developing the Piconut RISC-V CPU at THA.',
           imageUrl:
             'https://riscv.org/wp-content/uploads/2021/02/Standard_2-1920x1080-1.jpg',
           link: 'https://ees.tha.de/piconut/',
@@ -57,22 +59,13 @@ const CONFIG = {
   //   fileUrl:
   //     'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
   // },
-  // skills: [
-  //   'PHP',
-  //   'Laravel',
-  //   'JavaScript',
-  //   'React.js',
-  //   'Node.js',
-  //   'Nest.js',
-  //   'MySQL',
-  //   'PostgreSQL',
-  //   'Git',
-  //   'Docker',
-  //   'PHPUnit',
-  //   'CSS',
-  //   'Antd',
-  //   'Tailwind',
-  // ],
+  skills: [
+    'Programming',
+    'Agile Development',
+    'Linux',
+    'Deployment and CI/CD',
+    'Teamwork',
+  ],
   experiences: [
     {
       company: 'Xitaso GmbH',
@@ -93,7 +86,8 @@ const CONFIG = {
   educations: [
     {
       institution: 'Technical University of Applied Sciences Augsburg',
-      degree: 'Master of Science in Computer Science',
+      degree:
+        'Master of Science in Computer Science (Schwerpunkt Technische Informatik)',
       from: '2025',
       to: '2026',
     },
@@ -202,7 +196,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  // footer: `Made with <a 
+  // footer: `Made with <a
   //     class="text-primary" href="https://github.com/arifszn/gitprofile"
   //     target="_blank"
   //     rel="noreferrer"
