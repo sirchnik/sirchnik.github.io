@@ -43,6 +43,7 @@ export interface SanitizedSEO {
 }
 
 export interface SanitizedSocial {
+  'github-priv'?: string;
   linkedin?: string;
   x?: string;
   mastodon?: string;

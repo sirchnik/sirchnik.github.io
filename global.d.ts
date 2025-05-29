@@ -107,6 +107,7 @@ interface SEO {
 }
 
 interface Social {
+  'github-priv'?: string;
   /**
    * LinkedIn
    */

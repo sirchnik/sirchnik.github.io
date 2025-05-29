@@ -51,7 +51,7 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    'github-work': 'sirchnik-xitaso',
+    'github-priv': 'sirchnik',
     phone: '',
     email: 'sirniklax@gmail.com',
   },
@@ -133,7 +133,7 @@ const CONFIG = {
   //   snippetVersion: 6,
   // },
   themeConfig: {
-    defaultTheme: 'lofi',
+    defaultTheme: 'autumn',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
