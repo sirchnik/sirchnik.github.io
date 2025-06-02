@@ -20,7 +20,7 @@ const ListItem = ({
     ></div>
     <div className="my-0.5 text-xs">{time}</div>
     <h3 className="font-semibold">{position}</h3>
-    <div className="mb-4 font-normal">
+    <div className="mb-4 font-normal whitespace-pre">
       <a href={companyLink} target="_blank" rel="noreferrer">
         {company}
       </a>

@@ -53,7 +53,8 @@ const CONFIG = {
   social: {
     'github-priv': 'sirchnik',
     phone: '',
-    email: 'sirniklax@gmail.com',
+    email: 'sirniklax (at) gmail.com',
+    linkedin: 'niklas-sirch-584607229',
   },
   // resume: {
   //   fileUrl:
@@ -68,7 +69,8 @@ const CONFIG = {
   ],
   experiences: [
     {
-      company: 'Xitaso GmbH',
+      company:
+        '- Migration of Packaging HMI\n- Performance of Asset Administration Shell\nXitaso GmbH',
       position: 'Working Student',
       from: 'August 2023',
       to: 'Present',
@@ -93,7 +95,7 @@ const CONFIG = {
     },
     {
       institution: 'Technical University of Applied Sciences Augsburg',
-      degree: 'Bachelor of Science in Computer Science',
+      degree: 'Bachelor of Science in Computer Science (1.3)',
       from: '2021',
       to: '2025',
     },
