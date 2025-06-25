@@ -99,18 +99,18 @@ const ExternalProjectCard = ({
                   {item.imageUrl && (
                     <div className="opacity-90 w-full">
                       <LazyImage
-                      src={item.imageUrl}
-                      alt={'thumbnail'}
-                      className="w-full h-24 object-cover"
-                      placeholder={skeleton({
-                        widthCls: 'w-full',
-                        heightCls: 'h-24',
-                        shape: '',
-                      })}
+                        src={item.imageUrl}
+                        alt={'thumbnail'}
+                        className="w-full h-24 object-cover"
+                        placeholder={skeleton({
+                          widthCls: 'w-full',
+                          heightCls: 'h-24',
+                          shape: '',
+                        })}
                       />
                     </div>
                   )}
-                  <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify">
+                  <p className="mt-2 text-base-content text-opacity-60 text-sm text-justify whitespace-pre">
                     {item.description}
                   </p>
                 </div>

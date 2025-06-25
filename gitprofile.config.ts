@@ -40,9 +40,11 @@ const CONFIG = {
           description: `Helping in developing the Piconut RISC-V CPU at THA.
            - Implementing RV32 A-Extension
            - Introduce standard riscof test suite
+           - Enable OS Support + Port FreeRTOS to Piconut (ongoing)
           `
             .split('\n')
             .map((e) => e.trim())
+            .filter(Boolean)
             .join('\n'),
           imageUrl:
             'https://riscv.org/wp-content/uploads/2021/02/Standard_2-1920x1080-1.jpg',
@@ -63,7 +65,7 @@ const CONFIG = {
     linkedin: 'niklas-sirch-584607229',
   },
   resume: {
-    fileUrl: 'https://sirchnik.github.io/git-docs/cv/cv.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'https://sirchnik.github.io/git-docs/typst/cv.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
     'Programming',
@@ -71,6 +73,10 @@ const CONFIG = {
     'Linux',
     'Deployment and CI/CD',
     'Teamwork',
+    'Python',
+    'TypeScript',
+    'C++',
+    'Java',
   ],
   experiences: [
     {
