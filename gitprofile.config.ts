@@ -37,7 +37,13 @@ const CONFIG = {
       projects: [
         {
           title: 'Piconut',
-          description: 'Helping in developing the Piconut RISC-V CPU at THA.',
+          description: `Helping in developing the Piconut RISC-V CPU at THA.
+           - Implementing RV32 A-Extension
+           - Introduce standard riscof test suite
+          `
+            .split('\n')
+            .map((e) => e.trim())
+            .join('\n'),
           imageUrl:
             'https://riscv.org/wp-content/uploads/2021/02/Standard_2-1920x1080-1.jpg',
           link: 'https://ees.tha.de/piconut/',
@@ -56,10 +62,9 @@ const CONFIG = {
     email: 'sirniklax (at) gmail.com',
     linkedin: 'niklas-sirch-584607229',
   },
-  // resume: {
-  //   fileUrl:
-  //     'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
-  // },
+  resume: {
+    fileUrl: 'https://sirchnik.github.io/git-docs/cv/cv.pdf', // Empty fileUrl will hide the `Download Resume` button.
+  },
   skills: [
     'Programming',
     'Agile Development',
